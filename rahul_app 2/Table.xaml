@@ -1,0 +1,49 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="rahul_app_2.Table"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True"  IsMenuEnabled="True" Opacity="0.4" BackgroundColor="#FF1E3566" ForegroundColor="White">
+            <shell:ApplicationBarIconButton Click="refresh" IconUri="/Images/refresh.png" Text="Load/refresh"/>
+            <shell:ApplicationBar.MenuItems>
+
+                <shell:ApplicationBarMenuItem  Click="Fixture" Text="View Schedule" IsEnabled="True"/>
+                <shell:ApplicationBarMenuItem  Click="Fixture2" Text="View Table" IsEnabled="True"/>
+                <shell:ApplicationBarMenuItem  Click="News" Text="View News" IsEnabled="True"/>
+                <shell:ApplicationBarMenuItem  Click="social_click" Text="Social" IsEnabled="True"/>
+                <shell:ApplicationBarMenuItem  Click="Main_menu" Text="Go to main app" IsEnabled="True"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+    <Grid x:Name="LayoutRoot" Background="#FF0A4595">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="" Style="{StaticResource PhoneTextNormalStyle}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="0,0,0,0">
+            <phone:WebBrowser x:Name="Browser_table"  IsScriptEnabled="True" HorizontalAlignment="Center" VerticalAlignment="Top" Width="480" Height="991" Padding="50,0,0,0" Source="http://m.premierleague.com/en-gb/league-table.html" RenderTransformOrigin="0.5,0.5" Margin="0,-305,0,0">
+            </phone:WebBrowser>
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

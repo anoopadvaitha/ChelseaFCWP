@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
+  <DefaultLanguage xmlns="" code="en-US" />
+  <Languages xmlns="">
+    <Language code="en" />
+  </Languages>
+  <App xmlns="" ProductID="{3b29d36f-9817-4b8e-a007-9d729e870bfe}" Title="Chelsea FC Fan App" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Anoop Chandra" Description="This is a fan app for Chelsea Football Club" Publisher="Advaitha" PublisherID="{1406fd03-bba9-42f9-abce-913db97bf057}">
+    <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
+    <Capabilities>
+      <Capability Name="ID_CAP_NETWORKING" />
+      <Capability Name="ID_CAP_MEDIALIB_AUDIO" />
+      <Capability Name="ID_CAP_MEDIALIB_PLAYBACK" />
+      <Capability Name="ID_CAP_SENSORS" />
+      <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
+      <Capability Name="ID_CAP_MICROPHONE" />
+      <Capability Name="ID_CAP_SPEECH_RECOGNITION" />
+      <Capability Name="ID_CAP_PUSH_NOTIFICATION" />
+      <Capability Name="ID_CAP_NETWORKING" />
+    </Capabilities>
+    <Tasks>
+      <DefaultTask Name="_default" NavigationPage="MainPage.xaml" />
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="rahul_app_2Token" TaskName="_default">
+        <TemplateCycle>
+          <SmallImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileSmall.png</SmallImageURI>
+          <Title>
+          </Title>
+          <Photo01ImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileLarge.png</Photo01ImageURI>
+          <Photo02ImageURI IsRelative="true" IsResource="false">Assets\Tiles\cycle (1).jpg</Photo02ImageURI>
+          <Photo03ImageURI IsRelative="true" IsResource="false">Assets\Tiles\cycle (2).jpg</Photo03ImageURI>
+          <Photo04ImageURI IsRelative="true" IsResource="false">Assets\Tiles\cycle (3).jpg</Photo04ImageURI>
+          <Photo05ImageURI IsRelative="true" IsResource="false">Assets\Tiles\cycle (4).jpg</Photo05ImageURI>
+          <Photo06ImageURI IsRelative="true" IsResource="false">Assets\Tiles\cycle (5).jpg</Photo06ImageURI>
+          <Photo07ImageURI IsRelative="true" IsResource="false">Assets\Tiles\cycle (6).jpg</Photo07ImageURI>
+          <Photo08ImageURI IsRelative="true" IsResource="false">Assets\Tiles\cycle (7).jpg</Photo08ImageURI>
+          <Photo09ImageURI IsRelative="true" IsResource="false">
+          </Photo09ImageURI>
+          <Count>0</Count>
+          <HasLarge>True</HasLarge>
+          <DeviceLockImageURI IsRelative="true" IsResource="false">
+          </DeviceLockImageURI>
+        </TemplateCycle>
+      </PrimaryToken>
+    </Tokens>
+    <Extensions>
+      <Extension ExtensionName="LockScreen_Background" ConsumerID="{111DFF24-AA15-4A96-8006-2BFF8122084F}" TaskID="_default" />
+    </Extensions>
+    <ScreenResolutions>
+      <ScreenResolution Name="ID_RESOLUTION_WVGA" />
+      <ScreenResolution Name="ID_RESOLUTION_WXGA" />
+      <ScreenResolution Name="ID_RESOLUTION_HD720P" />
+    </ScreenResolutions>
+  </App>
+</Deployment>

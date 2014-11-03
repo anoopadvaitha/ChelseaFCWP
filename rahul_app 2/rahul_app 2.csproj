@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3B29D36F-9817-4B8E-A007-9D729E870BFE}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>rahul_app_2</RootNamespace>
+    <AssemblyName>rahul_app 2</AssemblyName>
+    <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>rahul_app_2_$(Configuration)_$(Platform).xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>rahul_app_2.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <ExpressionBlendVersion>12.0.50716.0</ExpressionBlendVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|ARM' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\ARM\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|ARM' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\ARM\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="About.xaml.cs">
+      <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fixture.cs" />
+    <Compile Include="Fixture.xaml.cs">
+      <DependentUpon>Fixture.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="html_tag.cs" />
+    <Compile Include="Kit.xaml.cs">
+      <DependentUpon>Kit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LocalizedStrings.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="news.xaml.cs">
+      <DependentUpon>news.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="next.xaml.cs">
+      <DependentUpon>next.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="players.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\AppResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RssTextTrimmer.cs" />
+    <Compile Include="Squad.xaml.cs">
+      <DependentUpon>Squad.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Table.xaml.cs">
+      <DependentUpon>Table.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\ItemViewModel.cs" />
+    <Compile Include="ViewModels\MainViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="About.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Fixture.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <DesignData Include="SampleData\MainViewModelSampleData.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </DesignData>
+    <Page Include="news.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="next.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Squad.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Table.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Properties\AppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\WMAppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="rahul_app_2_2014_08_04_18_11_36.sap" />
+    <None Include="rahul_app_2_2014_08_04_19_52_58.sap" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Tiles\cycle %281%29.jpg" />
+    <Content Include="Assets\Tiles\cycle %282%29.jpg" />
+    <Content Include="Assets\Tiles\cycle %283%29.jpg" />
+    <Content Include="Assets\Tiles\cycle %284%29.jpg" />
+    <Content Include="Assets\Tiles\cycle %285%29.jpg" />
+    <Content Include="Assets\Tiles\cycle %286%29.jpg" />
+    <Content Include="Assets\Tiles\cycle %287%29.jpg" />
+    <Content Include="Assets\Tiles\icon.png" />
+    <Content Include="Audio\%27The Liquidator%27 at Stamford Bridge.mp3" />
+    <Content Include="Audio\Blue Day.mp3" />
+    <Content Include="Audio\Chelsea FC Anthem - Blue is the Colour.mp3" />
+    <Content Include="Audio\Chelsea.mp3" />
+    <Content Include="Audio\Ring01.wma">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Audio\Ring02.wma">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Audio\Ring03.wma">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Audio\Ten Men Went To Mow.mp3" />
+    <Content Include="Audio\We all follow the Chelsea.mp3" />
+    <Content Include="images\calendar.png" />
+    <Content Include="images\chelsea_away.png" />
+    <Content Include="images\chelsea_away_shorts.png" />
+    <Content Include="images\chelsea_home.png" />
+    <Content Include="images\chelsea_home_shorts.png" />
+    <Content Include="images\chelsea_third.png" />
+    <Content Include="images\chelsea_third_shorts.png" />
+    <Content Include="images\download.png" />
+    <Content Include="images\Episode29.jpg" />
+    <Content Include="images\next.png" />
+    <Content Include="images\pause.png" />
+    <Content Include="images\play.png" />
+    <Content Include="images\prev.png" />
+    <Content Include="images\refresh.png" />
+    <Content Include="images\Ring01.jpg" />
+    <Content Include="images\Ring02.jpg" />
+    <Content Include="images\Ring03.jpg" />
+    <Content Include="images\track1.jpg" />
+    <Content Include="images\track2.jpg" />
+    <Content Include="listimg\andre-schurrle.thumbnail.png" />
+    <Content Include="listimg\andreas-christensen.thumbnail.png" />
+    <Content Include="listimg\branislav-ivanovic.thumbnail.png" />
+    <Content Include="listimg\carlos.png" />
+    <Content Include="listimg\cesar-azpilicueta.thumbnail.png" />
+    <Content Include="listimg\cesc-fabregas.thumbnail.png" />
+    <Content Include="listimg\chris.png" />
+    <Content Include="listimg\christophe.png" />
+    <Content Include="listimg\didier-drogba.thumbnail.png" />
+    <Content Include="listimg\diego-costa.thumbnail.png" />
+    <Content Include="listimg\eden-hazard.thumbnail.png" />
+    <Content Include="listimg\filipe-luis.thumbnail.png" />
+    <Content Include="listimg\gary-cahill.thumbnail.png" />
+    <Content Include="listimg\james.png" />
+    <Content Include="listimg\john-mikel-obi.thumbnail.png" />
+    <Content Include="listimg\john-terry.thumbnail.png" />
+    <Content Include="listimg\jose.png" />
+    <Content Include="listimg\kurt-zouma.thumbnail.png" />
+    <Content Include="listimg\lewis-baker.thumbnail.png" />
+    <Content Include="listimg\loic-remy.thumbnail.png" />
+    <Content Include="listimg\mark-schwarzer.thumbnail.png" />
+    <Content Include="listimg\michael.png" />
+    <Content Include="listimg\mick.png" />
+    <Content Include="listimg\mohamed-salah.thumbnail.png" />
+    <Content Include="listimg\nathan-ake.thumbnail.png" />
+    <Content Include="listimg\Neil.png" />
+    <Content Include="listimg\nemanja-matic.thumbnail.png" />
+    <Content Include="listimg\oscar.thumbnail.png" />
+    <Content Include="listimg\paco.png" />
+    <Content Include="listimg\petr-cech.thumbnail.png" />
+    <Content Include="listimg\plus.png" />
+    <Content Include="listimg\ramires.thumbnail.png" />
+    <Content Include="listimg\rest1.png" />
+    <Content Include="listimg\rest2.png" />
+    <Content Include="listimg\rest3.png" />
+    <Content Include="listimg\ruifaria.png" />
+    <Content Include="listimg\silvino.png" />
+    <Content Include="listimg\star.png" />
+    <Content Include="listimg\steveholland.png" />
+    <Content Include="listimg\thibaut-courtois.thumbnail.png" />
+    <Content Include="listimg\willian.thumbnail.png" />
+    <Content Include="settin\settings.png" />
+    <Content Include="settin\transport.ff.png" />
+    <Content Include="settin\transport.pause.png" />
+    <Content Include="settin\transport.play.png" />
+    <Content Include="settin\transport.rew.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Add.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Check.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Delete.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Select.png" />
+    <Content Include="VCDChelsea.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Assets\AlignmentGrid.png" />
+    <Content Include="Assets\ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileLarge.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileMedium.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileSmall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wallpaper\chelsea_0.jpg" />
+    <Content Include="wallpaper\chelsea_1.jpg" />
+    <Content Include="wallpaper\chelsea_10.jpg" />
+    <Content Include="wallpaper\chelsea_11.jpg" />
+    <Content Include="wallpaper\chelsea_2.jpg" />
+    <Content Include="wallpaper\chelsea_3.jpg" />
+    <Content Include="wallpaper\chelsea_4.jpg" />
+    <Content Include="wallpaper\chelsea_5.jpg" />
+    <Content Include="wallpaper\chelsea_6.jpg" />
+    <Content Include="wallpaper\chelsea_7.jpg" />
+    <Content Include="wallpaper\chelsea_8.jpg" />
+    <Content Include="wallpaper\chelsea_9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AppResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Expression.Drawing" />
+    <Reference Include="Microsoft.Expression.Interactions, Version=3.9.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Controls, Version=8.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Controls.Toolkit">
+      <HintPath>..\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.5\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Syndication">
+      <HintPath>C:\Program Files (x86)\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.ServiceModel.Syndication.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Interactivity, Version=3.9.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AudioPlayer\AudioPlayer.csproj">
+      <Project>{3c6695f3-973f-40af-9750-2865961a4180}</Project>
+      <Name>AudioPlayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\lockscreen\lockscreen.csproj">
+      <Project>{3D88C28D-772F-416A-B61A-BBEB3FDBD4E6}</Project>
+      <Name>lockscreen</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>

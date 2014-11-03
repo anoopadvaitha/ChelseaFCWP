@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.0">
+  <CommandSet xml:lang="en-us">
+    <CommandPrefix>Chelsea</CommandPrefix>
+    <Example>View Fixture Show Table</Example>
+    <Command Name="showWidgets">
+      <Example> View Fixture</Example>
+      <ListenFor> View [Fixture] </ListenFor>
+      <Feedback> Showing Fixture </Feedback>
+      <Navigate Target="/Fixture.xaml"/>
+    </Command>
+    
+    <Command Name="Table">
+      <Example> Show Table</Example>
+      <ListenFor> Show Table </ListenFor>
+      <Feedback> Showing Table </Feedback>
+      <Navigate Target="/Table.xaml"/>
+    </Command>
+    <Command Name="News">
+      <Example> Show News</Example>
+      <ListenFor> Show News </ListenFor>
+      <Feedback> Showing News Anoop </Feedback>
+      <Navigate Target="/News.xaml"/>
+    </Command>
+
+  </CommandSet>
+
+
+  <!-- Other CommandSets for other languages -->
+
+</VoiceCommands>

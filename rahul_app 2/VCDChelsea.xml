@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.0">
+  <CommandSet xml:lang="en-us">
+    <CommandPrefix>Chelsea</CommandPrefix>
+    <Example>Fixture, Table</Example>
+    <Command Name="showWidgets">
+      <Example>Fixture</Example>
+      <ListenFor>[view] [show] Fixture</ListenFor>
+      <Feedback> Showing Fixture </Feedback>
+      <Navigate Target="/Fixture.xaml"/>
+    </Command>
+    <Command Name="livescore">
+      <Example>Live Score</Example>
+      <ListenFor>[view] [show] Live Score</ListenFor>
+      <Feedback> Showing Live Score </Feedback>
+      <Navigate Target="/Push.xaml"/>
+    </Command>
+    
+    <Command Name="Table">
+      <Example> Show Table</Example>
+      <ListenFor> Show Table </ListenFor>
+      <Feedback> Showing Table </Feedback>
+      <Navigate Target="/Table.xaml"/>
+    </Command>
+    <Command Name="News">
+      <Example> Show News</Example>
+      <ListenFor> Show News </ListenFor>
+      <Feedback> Showing News </Feedback>
+      <Navigate Target="/News.xaml"/>
+    </Command>
+ <Command Name="NextMatch">
+      <Example> whats the next match</Example>
+      <ListenFor> [what] [is] next match</ListenFor>
+      <Feedback> Just a moment  </Feedback>
+      <Navigate Target="/News.xaml"/>
+    </Command>
+  </CommandSet>
+
+
+  <!-- Other CommandSets for other languages -->
+
+</VoiceCommands>
